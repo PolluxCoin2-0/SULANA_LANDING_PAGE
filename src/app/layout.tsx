@@ -16,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Sulana",
+  title: "Sulaana",
   description: "The Decentralized Knowledge Ecosystem for Blockchain and Cryptocurrency Powered by AI and Built on PolluxChain",
 };
 
