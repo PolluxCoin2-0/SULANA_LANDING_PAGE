@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   FaBlog,
   FaAppStore,
@@ -9,18 +9,18 @@ import {
   FaGamepad,
   FaChalkboardTeacher,
   FaMoneyBillWave,
-} from 'react-icons/fa';
+} from "react-icons/fa";
 
 const genres = [
-  { name: 'Blogs', icon: <FaBlog /> },
-  { name: 'Apps', icon: <FaAppStore /> },
-  { name: 'Marketplaces', icon: <FaStore /> },
-  { name: 'News', icon: <FaNewspaper /> },
-  { name: 'Social', icon: <FaUsers /> },
-  { name: 'Media', icon: <FaPhotoVideo /> },
-  { name: 'Gaming', icon: <FaGamepad /> },
-  { name: 'Education', icon: <FaChalkboardTeacher /> },
-  { name: 'Finance', icon: <FaMoneyBillWave /> },
+  { name: "Knowledge Hubs", icon: <FaBlog /> },
+  { name: "DApps", icon: <FaAppStore /> },
+  { name: "Marketplaces", icon: <FaStore /> },
+  { name: "Research & News", icon: <FaNewspaper /> },
+  { name: "Communities", icon: <FaUsers /> },
+  { name: "Multimedia", icon: <FaPhotoVideo /> },
+  { name: "Gaming", icon: <FaGamepad /> },
+  { name: "Education", icon: <FaChalkboardTeacher /> },
+  { name: "Finance", icon: <FaMoneyBillWave /> },
 ];
 
 const Page: React.FC = () => {
@@ -28,15 +28,18 @@ const Page: React.FC = () => {
     <div className="flex flex-col items-center py-12 space-y-8 border-b-[1px] border-dashed border-[#E5E5E6]">
       {/* Header Text */}
       <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D2AA7] to-[#8D32B6] text-center leading-relaxed">
-        Build for the whole internet.
+        Built for Every Use Case
       </p>
 
-      <p className="text-[#808183] text-lg font-normal text-center max-w-2xl">
-        Bring your ideas to life in a secure, fast, and reliable environment—create entirely new experiences or enhance existing products with plug-and-play features.
+      <p className="text-[#808183] text-lg font-normal text-center max-w-2xl mx-4 sm:mx-8 md:mx-12">
+        From decentralized finance to education, Sulaana is designed to foster a
+        resilient blockchain ecosystem adaptable for various applications.
+        Developers can effortlessly deploy information experiences that cater to
+        a broad audience.
       </p>
 
       {/* Genre Boxes */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full px-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 w-full px-8">
         {genres.map((genre, index) => (
           <div
             key={index}

@@ -8,48 +8,51 @@ import { SlGlobe } from "react-icons/sl";
 const features = [
   {
     icon: <LuUserCircle2 size={32} />,
-    title: "Accounts.",
+    title: "Accounts",
     description:
-      "Smart Accounts—signless and gasless. One account for all apps.",
+      "Secure and user-friendly Sulaana accounts, giving seamless access across all platform features.",
   },
   {
     icon: <MdAlternateEmail size={32} />,
-    title: "Messaging.",
-    description: "A secure and private communication protocol.",
+    title: "Messaging",
+    description: "Decentralized and private messaging for seamless collaboration within the Sulaana ecosystem.",
   },
   {
     icon: <SlGlobe size={32} />,
-    title: "Global Reach.",
-    description: "Access a world of on-chain features without borders.",
+    title: "Global Knowledge Network.",
+    description: "Connect and contribute to a global, borderless network of blockchain knowledge.",
   },
   {
     icon: <PiGraphFill size={32} />,
     title: "Analytics.",
-    description: "Track and analyze data to grow your reach.",
+    description: "Powerful tools to track engagement and gain insights on content reach and impact.",
   },
   {
     icon: <LuLayoutGrid size={32} />,
     title: "Modular Toolkit.",
-    description: "Customizable modules for tailored user experiences.",
+    description: "Flexible and customizable modules to shape user experiences, tailored to diverse knowledge-sharing needs.",
   },
   {
     icon: <GrCircleQuestion size={32} />,
     title: "Support.",
-    description: "Comprehensive support and resources for developers.",
+    description: "Dedicated resources and guidance for contributors, researchers, and developers.",
   },
 ];
 
 const Page: React.FC = () => {
   return (
     <div className="py-12 border-b-[1px] border-dashed border-[#E5E5E6]">
-      <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D2AA7] to-[#8D32B6] text-center">
-        Your users will love it.
-      </p>
-      <p className="text-[#808183] text-xl font-medium text-center">
-      It&apos;s never been easier to bring users onchain.
-      </p>
+      <div className="flex flex-col items-center justify-center">
+        <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#4D2AA7] to-[#8D32B6] text-center py-1">
+          Your community will thrive with Sulaana.
+        </p>
+        <p className="text-[#808183] text-xl font-medium w-[80%] sm:w-[90%] md:w-[75%] lg:w-[60%] text-center leading-relaxed">
+          Empowering knowledge sharing in the blockchain space.
+        </p>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 pt-12">
+      {/* Feature Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 pt-12">
         {features.map((feature, index) => (
           <div
             key={index}
@@ -68,3 +71,4 @@ const Page: React.FC = () => {
 };
 
 export default Page;
+  

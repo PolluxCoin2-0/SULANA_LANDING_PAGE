@@ -10,65 +10,65 @@ import { LuLayoutGrid } from "react-icons/lu";
 const features = [
   {
     icon: <LuUserCircle2 size={36} />,
-    title: "Accounts",
-    description: "Smart Accounts—signless and gasless. One account for all apps.",
+    title: "Smart Profiles",
+    description: "Secure, gasless accounts—one profile to access all knowledge features.",
   },
   {
     icon: <MdAlternateEmail size={36} />,
-    title: "Messaging",
-    description: "A secure and private communication protocol.",
+    title: "Community Messaging",
+    description: "Encrypted and private communication within knowledge communities.",
   },
   {
     icon: <SlGlobe size={36} />,
-    title: "Global Reach",
-    description: "Access a world of on-chain features without borders.",
+    title: "Global Accessibility",
+    description: "Connect and share information across borders on a unified platform.",
   },
   {
     icon: <PiGraphFill size={36} />,
-    title: "Analytics",
-    description: "Track and analyze data to grow your reach.",
+    title: "Insights & Analytics",
+    description: "Track, analyze, and optimize knowledge-sharing engagement.",
   },
   {
     icon: <LuLayoutGrid size={36} />,
-    title: "Modular Toolkit",
-    description: "Customizable modules for tailored user experiences.",
+    title: "Customizable Modules",
+    description: "Tailored tools for a personalized knowledge experience.",
   },
   {
     icon: <GrCircleQuestion size={36} />,
-    title: "Support",
-    description: "Comprehensive support and resources for developers.",
+    title: "Comprehensive Support",
+    description: "Dedicated assistance and resources for community growth.",
   },
 ];
 
 const Page: React.FC = () => {
   return (
-    <div className="pb-16 border-b-[1px] border-dashed border-[#E5E5E6] ">
+    <div className="pb-16 border-b-[1px] border-dashed border-[#E5E5E6]">
       {/* Header Section */}
-      <p className="font-semibold text-3xl text-[#8E8F91] py-12 px-4 text-center max-w-4xl mx-auto">
-        <span className="text-[#4D2AA7]">Onchain social features.</span> An intuitively designed, modular toolkit with maximum flexibility and built-in monetization opportunities.
+      <p className="font-semibold text-xl md:text-2xl text-[#8E8F91] py-8 md:py-12 px-4 text-center max-w-4xl mx-auto leading-relaxed">
+        <span className="text-[#4D2AA7]">On-chain Knowledge Tools.</span> A seamless, modular ecosystem empowering users with enhanced interaction, security, and analytics for a knowledge-driven future.
       </p>
 
-      {/* Diagonal Floating Feature Boxes */}
-      <div className="relative flex flex-wrap justify-center gap-6 px-4 md:px-16 max-w-6xl mx-auto">
+      {/* Feature Boxes */}
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-4 md:px-16 max-w-6xl mx-auto">
         {features.map((feature, index) => (
           <div
             key={index}
-            className={`relative flex flex-col items-start p-6 bg-gradient-to-br from-[#f8f5ff] to-[#ece9ff] border border-dashed border-[#B6A6E9] rounded-lg shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl transform ${
-              index % 2 === 0 ? "rotate-2" : "-rotate-2"
-            } ${
+            className={`relative flex flex-col items-start p-4 md:p-6 bg-gradient-to-br from-[#f8f5ff] to-[#ece9ff] border border-dashed border-[#B6A6E9] rounded-lg shadow-lg transition-all duration-300 ${
+              index % 2 === 0 ? "rotate-1" : "-rotate-1"
+            } hover:scale-105 hover:shadow-xl ${
               index % 3 === 0
-                ? "translate-x-4"
+                ? "translate-x-2 md:translate-x-4"
                 : index % 3 === 1
-                ? "-translate-y-4"
-                : "translate-y-4"
+                ? "-translate-y-2 md:-translate-y-4"
+                : "translate-y-2 md:translate-y-4"
             }`}
           >
             {/* Icon */}
-            <div className="text-[#4D2AA7] mb-3">{feature.icon}</div>
+            <div className="text-[#4D2AA7] mb-2 md:mb-3">{feature.icon}</div>
             
             {/* Title and Description */}
             <p className="font-semibold text-lg text-[#4D2AA7] mb-1">{feature.title}</p>
-            <p className="text-[#707174] text-base">{feature.description}</p>
+            <p className="text-[#707174] text-sm md:text-base leading-snug">{feature.description}</p>
           </div>
         ))}
       </div>

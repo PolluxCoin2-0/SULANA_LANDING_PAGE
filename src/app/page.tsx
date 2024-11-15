@@ -8,9 +8,9 @@ import Contact from "../app/HomeComponent/Contact/page";
 
 export default function Home() {
   return (
-    <div className="bg-white text-black min-h-screen pt-24 mx-auto w-[60%]">
+    <div className="bg-white text-black min-h-screen pt-0 md:pt-24 mx-auto w-full md:w-[60%]">
       <DeveloperPreview />
-     <BuildInternet/>
+      <BuildInternet />
       <Features />
       <IntegrateLens />
       <LoveIt />
