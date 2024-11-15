@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
 
         {/* Footer Text Section */}
         <div className="text-center text-sm text-opacity-80 mt-8 md:mt-0">
-          <p>&copy; {new Date().getFullYear()} Your Brand. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} SULAANA. All Rights Reserved.</p>
           <div className="space-x-6 mt-4">
             <a
               href="/privacy-policy"
