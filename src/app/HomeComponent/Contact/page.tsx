@@ -38,7 +38,7 @@ const Page: React.FC = () => {
       <p className="text-3xl font-semibold text-gray-800 text-center">
         Stay updated.
         <br />
-        Join us on the journey to <span className="text-[#4D2AA7]">Lens</span>.
+        Join us on the journey to <span className="text-[#4D2AA7]">SULAANA</span>.
       </p>
 
       {/* Input and Button */}

@@ -1,12 +1,6 @@
 import React from "react";
 import Logo from "../../../public/Logo.svg";
 import Image from "next/image";
-import { FaTelegram, FaTwitter } from "react-icons/fa";
-
-const socialLinks = [
-  { href: 'https://x.com/SulaanaDao', icon: <FaTwitter />, ariaLabel: 'Twitter' },
-  { href: 'https://t.me/SulaanaDao', icon: <FaTelegram />, ariaLabel: 'Telegram' },
-];
 
 const Page: React.FC = () => {
   return (

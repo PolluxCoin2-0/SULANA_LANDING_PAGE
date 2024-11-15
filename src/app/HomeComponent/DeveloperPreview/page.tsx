@@ -72,7 +72,7 @@ const Page: React.FC = () => {
           className="w-[25%] sm:w-[20%] md:w-[15%] lg:w-[10%]"
         />
         <AnimatedText />
-        <p className="text-[#8E8F91] text-base sm:text-lg md:text-xl font-medium sm:w-[70%] md:w-[60%] lg:w-[50%] mx-auto">
+        <p className="text-[#8E8F91] text-base sm:text-lg md:text-xl font-medium sm:w-[70%] md:w-[60%] lg:w-[80%] mx-auto">
           Sulaana is the AI-powered blockchain encyclopedia, bringing accurate, decentralized knowledge to life on the blockchain. Explore a world of information where every article is AI-enhanced, dynamic, and community-driven.
         </p>
         <div className="flex justify-center mt-8">
