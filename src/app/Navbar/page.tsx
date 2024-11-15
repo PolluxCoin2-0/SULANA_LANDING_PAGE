@@ -26,18 +26,14 @@ const Page: React.FC = () => {
 
       {/* Social Links Section */}
       <div className="flex justify-center items-center space-x-6 md:space-x-8 -mt-4 md:-mt-0">
-        {socialLinks.map((link) => (
+      <div className="flex justify-center">
           <a
-            key={link.ariaLabel}
-            href={link.href}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={link.ariaLabel}
-            className="text-3xl md:text-4xl text-[#4D2AA7] hover:text-[#8D32B6] transition-all duration-300 transform hover:scale-110"
+            href="#"
+            className="text-white font-semibold bg-gradient-to-r from-[#4D2AA7] to-[#8D32B6] px-8 py-3 rounded-full shadow-lg hover:bg-gradient-to-r hover:from-purple-700 hover:to-indigo-700 transition-all duration-300"
           >
-            {link.icon}
+            SULMINE
           </a>
-        ))}
+        </div>
       </div>
     </div>
   );
