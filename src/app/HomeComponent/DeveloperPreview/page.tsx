@@ -5,7 +5,7 @@ import Image from "next/image";
 
 // AnimatedText component with scale and opacity transition
 const AnimatedText = () => {
-  const words = ["knowledge", "insights", "wisdom", "intelligence"];
+  const words = ["KNOWLEDGE", "INSIGHTS", "WISDOM", "INTELLIGENCE"];
   const colors = [
     "text-purple-500",
     "text-blue-500",

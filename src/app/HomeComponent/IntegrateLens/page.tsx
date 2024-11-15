@@ -26,7 +26,7 @@ const Page: React.FC = () => {
               Mainnet and Testnet Available
             </h3>
             <p className="text-[#868789] mt-2">
-              Ready for deployment now—no pre-launch wait required.
+              Ready for deployment now-no pre-launch wait required.
             </p>
           </div>
         </div>

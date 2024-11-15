@@ -11,7 +11,7 @@ const features = [
   {
     icon: <LuUserCircle2 size={36} />,
     title: "Smart Profiles",
-    description: "Secure, gasless accounts—one profile to access all knowledge features.",
+    description: "Secure, gasless accounts-one profile to access all knowledge features.",
   },
   {
     icon: <MdAlternateEmail size={36} />,
