@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../../public/Logo.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Page: React.FC = () => {
   return (
@@ -21,12 +22,12 @@ const Page: React.FC = () => {
       {/* Social Links Section */}
       <div className="flex justify-center items-center space-x-6 md:space-x-8 -mt-4 md:-mt-0">
       <div className="flex justify-center">
-          <a
-            href="#"
+          <Link
+            href="https://sulmine.sulaana.com/"
             className="text-white font-semibold bg-gradient-to-r from-[#4D2AA7] to-[#8D32B6] px-8 py-3 rounded-full shadow-lg hover:bg-gradient-to-r hover:from-purple-700 hover:to-indigo-700 transition-all duration-300"
           >
             SULMINE
-          </a>
+          </Link>
         </div>
       </div>
     </div>
