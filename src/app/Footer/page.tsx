@@ -34,16 +34,24 @@ const Footer: React.FC = () => {
           <div className="space-x-6 mt-4">
             <a
               href="/privacy-policy"
-              className="hover:text-yellow-400 transition-all duration-300"
+              className="hover:text-purple-500 transition-all duration-300"
             >
               Privacy Policy
             </a>
             <span>|</span>
             <a
               href="/terms-of-service"
-              className="hover:text-yellow-400 transition-all duration-300"
+              className="hover:text-purple-500 transition-all duration-300"
             >
               Terms of Service
+            </a>
+            <span>|</span>
+            {/* Whitepaper Link */}
+            <a
+              href="./SulaanaWhitepaper.pdf" // Update with the actual link to your whitepaper
+              className="hover:text-purple-500 transition-all duration-300"
+            >
+              Whitepaper
             </a>
           </div>
         </div>
