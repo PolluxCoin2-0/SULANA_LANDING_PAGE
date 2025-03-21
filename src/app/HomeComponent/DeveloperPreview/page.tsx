@@ -39,7 +39,7 @@ const AnimatedText = () => {
   }, [index]);
 
   return (
-    <p className="text-3xl md:text-5xl font-bold text-center">
+    <h1 className="text-3xl md:text-5xl font-bold text-center">
       Build{" "}
       <span
         className={`${colors[index]} transition-all duration-500 inline-block`}
@@ -51,7 +51,7 @@ const AnimatedText = () => {
         {words[index]}
       </span>{" "}
       with SUL
-    </p>
+    </h1>
   );
 };
 
@@ -72,9 +72,9 @@ const Page: React.FC = () => {
           className="w-[25%] sm:w-[20%] md:w-[15%] lg:w-[10%]"
         />
         <AnimatedText />
-        <p className="text-[#8E8F91] text-base sm:text-lg md:text-xl font-medium sm:w-[70%] md:w-[60%] lg:w-[80%] mx-auto">
+        <h2 className="text-[#8E8F91] text-base sm:text-lg md:text-xl font-medium sm:w-[70%] md:w-[60%] lg:w-[80%] mx-auto">
           Sulaana is the AI-powered blockchain encyclopedia, bringing accurate, decentralized knowledge to life on the blockchain. Explore a world of information where every article is AI-enhanced, dynamic, and community-driven.
-        </p>
+        </h2>
         <div className="flex justify-center mt-8">
           <a
             href="#"
